@@ -3,6 +3,7 @@ mod content;
 pub use piece::*;
 pub use content::*;
 
+use Definitions::*;
 
 #[derive(Clone)]
 pub struct Game {
@@ -619,6 +620,12 @@ impl Game {
             return GameState::NoThreats;
         }
     }
+
+    //x pos, y pos
+    pub fn get_content(&self, pos : (usize, usize)) -> Content {
+        return self.board[pos.1][pos.0]
+    }
+
 }
 
 

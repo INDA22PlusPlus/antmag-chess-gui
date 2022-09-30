@@ -1,4 +1,5 @@
-use crate::piece::*;
+
+use crate::piece::Definitions::*;
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub enum Content {
